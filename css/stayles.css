@@ -1,0 +1,31 @@
+/* Цвета лого #000000 #2196F3 */
+/* Основной цвет текста #757575 */
+/* Цвет заголовков #212121 */
+/* Основной шрифт Roboto */
+/* Шрифт лого Raleway */
+
+
+
+:root {
+    --brend-color: #2196F3;
+    --color-text: #757575;
+    --color-tittle: #212121
+    
+}
+
+body {
+    font-family: Roboto;
+    color: #757575;
+}
+
+/* Логотип */
+.logo {
+    color: var(--brend-color);
+}
+.st {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
