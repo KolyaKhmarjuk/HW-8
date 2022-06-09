@@ -1,4 +1,4 @@
-
+/* Основные настройки */
 :root {
     --brend-color: #2196F3;
     --color-text: #757575;
@@ -15,14 +15,14 @@ body {
     background-color: var(#FFFFFF);
 }
 
-li {
+.list {
     list-style-type: none;
   }
 
 
-/* Логотип Шапки */
+/* Логотип Футера */
 
-.logo{
+.header-logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -31,77 +31,82 @@ li {
     color: var(--color-tittle);
     text-decoration: none;
 }
-.logo > span{
+.header-logo > span{
     color: var(--brend-color);
 }
 
-/* Ссылки навигации */
+/* Ссылки навигации сайта */
 
-.social-link{
+.nav{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color:var(--color-tittle);
 }
-.social-link a{
+.nav a{
     color:var(--color-tittle);
     text-decoration: none;
 }
-.social-link a:hover,
-.social-link a:focus{
+.nav a:hover,
+.nav a:focus{
     color: var(--brend-color);
 }
-.social-link .list{
-    color: var(--color-text);
+.nav-link a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }
-.social-link .list:hover,
-.social-link .list:focus{
+.nav-link a{
+    color: var(--color-text);
+}
+.nav-link a:hover,
+.nav-link a:focus{
     color:var(--brend-color);
 }
 
 /* Hero */
 
-.hero .tittle{
+.hero .title{
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--bgd-color-text);
     background-color: var(--bgd-brand);
 }
-.hero .button{
+.hero-btn{
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.1;
     cursor: pointer;
-}
-.hero .button:hover,
-.hero .button:focus{
     background-color: var(--brend-color);
     color: var(--bgd-color-text);
 }
 
 /* Особености */
 
-.subtittle .tittle {
+.subtitle h3{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--color-tittle);
 }
-.subtittle .text{
+.subtitle p{
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
 /* Виджеты */
 
-.widget .tittle{
+.widget .title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -111,7 +116,7 @@ li {
 }
 /* Команда */
 
-.commands .tittle{
+.commands .title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -119,24 +124,28 @@ li {
     letter-spacing: 0.03em;
     color: var(--color-tittle);
 }
-.commands .subtittle{
+.commands h3{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--color-tittle);
 }
-.commands .text{
+.commands p{
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
 
 /* Подвал */
+
 .footer{
     background-color: var(--bgd-brand);
 }
-.footer .logo{
+.footer-logo > span{
+    color: var(--brend-color);
+}
+.footer-logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -145,49 +154,52 @@ li {
     color: var(--bgd-color-text);
     text-decoration: none;
 }
-.footer .logo > span{
-    color: var(--brend-color);
-}
-.footer .text{
+.address p{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
     color: var(--bgd-color-text);
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
-.footer .list{
+.address a{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color:var(--color-footer-link);
+    text-decoration: none;
 }
-.footer .link:hover,
-.footer .link:focus{
+.address a:hover,
+.address a:focus{
     color:var(--brend-color)
 }
 
 /* Портфолио */
 
-.radiobutton .button{
+.portfolio-btn{
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     cursor: pointer;
 }
-
-.radiobutton .button:hover,
-.radiobutton .button:focus{
+.portfolio-btn:hover,
+.portfolio-btn:focus{
     background-color: var(--brend-color);
     color: var(--bgd-color-text);
 }
 
-.features .tittle{
+.features h2{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-tittle);
 }
-.features .text{
+.features p{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
