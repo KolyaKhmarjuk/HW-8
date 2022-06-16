@@ -8,19 +8,33 @@
     --color-footer-link: #FFFFFF99;
 
 }
-
 body {
     font-family: Roboto, sans-serif;
     color: var(--color-text);
     background-color: var(#FFFFFF);
 }
-
 .list {
     list-style-type: none;
   }
 
+  h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0px;
+    padding: 0px;
+  }
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* Логотип Футера */
+*, 
+::after, 
+::before {
+    box-sizing: border-box;
+}
+/* Логотип Хедера */
 
 .header-logo{
     font-family: 'Raleway', sans-serif;
@@ -30,6 +44,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--color-tittle);
     text-decoration: none;
+    margin-right: 93px;
 }
 .header-logo > span{
     color: var(--brend-color);
@@ -37,46 +52,78 @@ body {
 
 /* Ссылки навигации сайта */
 
-.nav{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color:var(--color-tittle);
-}
-.nav a{
-    color:var(--color-tittle);
-    text-decoration: none;
-}
-.nav a:hover,
-.nav a:focus{
-    color: var(--brend-color);
-}
-.nav-link a{
+.nav-list, .contact-list .contact-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
+    color:var(--color-tittle);
 }
-.nav-link a{
+.nav-list .nav-link{
+    color:var(--color-tittle);
+    text-decoration: none;
+}
+.contact-list .contact-link{
     color: var(--color-text);
 }
-.nav-link a:hover,
-.nav-link a:focus{
+.contact-list .contact-link:hover,
+.contact-list .contact-link:focus,
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus{
     color:var(--brend-color);
 }
 
-/* Hero */
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
 
-.hero .title{
+.header-box{
+    display: flex;
+}
+
+.nav-item,
+.contact-item{
+    margin-right: 50px;
+}
+
+.header-logo{
+    align-self: center;
+}
+
+.nav-list{
+    display: flex;
+    margin-right: auto;
+    align-self: center;
+}
+
+.contact-list{
+    display: flex;
+    align-self: center;
+}
+
+.nav-item:last-child,
+.contact-item:last-child{
+    margin-right: 0;
+}
+
+
+/* Hero */
+.hero{
+    height: 600px;
+    background-color: var(--bgd-brand);
+}
+
+
+.hero .hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--bgd-color-text);
-    background-color: var(--bgd-brand);
 }
 .hero-btn{
     font-family: 'Roboto';
@@ -91,14 +138,14 @@ body {
 
 /* Особености */
 
-.subtitle h3{
+.subtitle .title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--color-tittle);
 }
-.subtitle p{
+.subtitle .text{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -116,7 +163,7 @@ body {
 }
 /* Команда */
 
-.commands .title{
+.team .title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -124,14 +171,14 @@ body {
     letter-spacing: 0.03em;
     color: var(--color-tittle);
 }
-.commands h3{
+.team .name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--color-tittle);
 }
-.commands p{
+.team ..speciality{
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -154,7 +201,7 @@ body {
     color: var(--bgd-color-text);
     text-decoration: none;
 }
-.address p{
+.address .text{
     font-family: Roboto, sans-serif;
     font-style: normal;
     color: var(--bgd-color-text);
@@ -162,7 +209,7 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-.address a{
+.address .link{
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-size: 14px;
@@ -171,8 +218,8 @@ body {
     color:var(--color-footer-link);
     text-decoration: none;
 }
-.address a:hover,
-.address a:focus{
+.address .link:hover,
+.address .link:focus{
     color:var(--brend-color)
 }
 
@@ -192,14 +239,14 @@ body {
     color: var(--bgd-color-text);
 }
 
-.features h2{
+.features .subtitle{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-tittle);
 }
-.features p{
+.features .text{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
