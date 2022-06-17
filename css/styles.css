@@ -29,6 +29,11 @@ body {
     margin-right: auto;
 }
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 *, 
 ::after, 
 ::before {
@@ -52,7 +57,7 @@ body {
 
 /* Ссылки навигации сайта */
 
-.nav-list, .contact-list .contact-link{
+.nav-link, .contact-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -60,28 +65,33 @@ body {
     text-decoration: none;
     color:var(--color-tittle);
 }
-.nav-list .nav-link{
+.nav-link{
     color:var(--color-tittle);
-    text-decoration: none;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
-.contact-list .contact-link{
+.contact-link{
     color: var(--color-text);
 }
-.contact-list .contact-link:hover,
-.contact-list .contact-link:focus,
-.nav-list .nav-link:hover,
-.nav-list .nav-link:focus{
+.contact-link:hover,
+.contact-link:focus,
+.nav-link:hover,
+.nav-link:focus{
     color:var(--brend-color);
 }
 
 .page-header{
     display: flex;
     justify-content: space-between;
-    height: 80px;
 }
 
 .header-box{
     display: flex;
+}
+
+.nav-item{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .nav-item,
@@ -97,6 +107,8 @@ body {
     display: flex;
     margin-right: auto;
     align-self: center;
+    
+
 }
 
 .contact-list{
@@ -112,8 +124,12 @@ body {
 
 /* Hero */
 .hero{
+    display: flex;
     height: 600px;
     background-color: var(--bgd-brand);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -124,7 +140,9 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--bgd-color-text);
+    margin-bottom: 30px;
 }
+
 .hero-btn{
     font-family: 'Roboto';
     font-style: normal;
@@ -134,60 +152,110 @@ body {
     cursor: pointer;
     background-color: var(--brend-color);
     color: var(--bgd-color-text);
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border-color: transparent; 
 }
 
 /* Особености */
 
-.subtitle .title{
+.special-item{
+    display: flex;
+    
+}
+
+.special-list{
+    display: flex;
+    justify-content: space-between;
+}
+.special-item{
+    flex-direction: column;
+    width: 270px;
+    height: 101px;
+}
+
+.special-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--color-tittle);
+    padding-bottom: 10px;
+
 }
-.subtitle .text{
+.special-text{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
 /* Виджеты */
+.widget{
+    padding-top: 0px;
+}
 
-.widget .title{
+.widget-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-tittle);
+    padding-bottom: 50px;
 }
+
 /* Команда */
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
 
-.team .title{
+.team-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-tittle);
+    padding-bottom: 50px;
+    
 }
-.team .name{
+
+.team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--color-tittle);
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
-.team ..speciality{
+.team-speciality{
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
 }
 
 /* Подвал */
 
 .footer{
+    display: flex;
     background-color: var(--bgd-brand);
+    height: 252px;
+
 }
 .footer-logo > span{
     color: var(--brend-color);
@@ -201,25 +269,24 @@ body {
     color: var(--bgd-color-text);
     text-decoration: none;
 }
-.address .text{
+
+.address-map,
+.address-link{
     font-family: Roboto, sans-serif;
     font-style: normal;
-    color: var(--bgd-color-text);
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-.address .link{
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+.address-map{
+    color: var(--bgd-color-text);
+}
+.address-link{
     color:var(--color-footer-link);
     text-decoration: none;
 }
-.address .link:hover,
-.address .link:focus{
+.address-link:hover,
+.address-link:focus{
     color:var(--brend-color)
 }
 
