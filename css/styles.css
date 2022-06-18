@@ -255,8 +255,20 @@ body {
     display: flex;
     background-color: var(--bgd-brand);
     height: 252px;
-
 }
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.address-item:not(:last-child){
+padding-bottom: 9px;
+}
+
+
+ 
+
 .footer-logo > span{
     color: var(--brend-color);
 }
@@ -268,6 +280,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--bgd-color-text);
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .address-map,
@@ -290,7 +303,10 @@ body {
     color:var(--brend-color)
 }
 
+
 /* Портфолио */
+
+/* Кнопки */
 
 .portfolio-btn{
     font-family: 'Roboto';
@@ -299,22 +315,47 @@ body {
     font-size: 16px;
     line-height: 1.6;
     cursor: pointer;
+    border-color: transparent;
+    color: var(--color-tittle);
+    background-color: #F5F4FA;
+    height: 38px;
+    border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
     background-color: var(--brend-color);
     color: var(--bgd-color-text);
 }
+.project-list{
+    display: flex;
+    justify-content: center;
+}
+.project{
+    padding-bottom: 50px;
+}
+.project-item:not(:last-child){
+    padding-right: 8px;
+}
 
-.features .subtitle{
+/* Картинки */
+
+.features-subtitle{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-tittle);
 }
-.features .text{
+.features-text{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+}
+
+.features-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-item{
 }
