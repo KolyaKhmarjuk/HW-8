@@ -330,6 +330,8 @@ padding-bottom: 9px;
     background-color: #F5F4FA;
     height: 38px;
     border-radius: 4px;
+
+    padding: 6px 22px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
@@ -340,7 +342,7 @@ padding-bottom: 9px;
     display: flex;
     justify-content: center;
 }
-.project{
+.project-box{
     padding-bottom: 50px;
 }
 .project-item:not(:last-child){
@@ -348,10 +350,6 @@ padding-bottom: 9px;
 }
 
 /* Картинки */
-
-.features{
-    padding-top: 0px;
-}
 .features-subtitle{
     font-weight: 700;
     font-size: 18px;
