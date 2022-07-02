@@ -326,34 +326,9 @@ img {
   }
   
 
-                              /* ПОСТОЯННЫЕ КЛИЕНТЫ */
+                               /* ПОСТОЯННЫЕ КЛИЕНТЫ  */
 
-  .clients-list{
-    display: flex;
-  }
-
-  .clients-item{
-    display: inline-block;
-    justify-content: center;
-    padding: 16px 32px 16px 32px;
-    width: 170px;
-    height: 92px;
-    fill: #afb1b8;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .clients-item:hover{
-    fill: var(--brend-color);
-    border: 1px solid var(--brend-color);
-  }
-
-  .clients-item:not(:last-child){
-    margin-right: 26px;
-  }
-
-  .title-clients{
+.title-clients {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -361,7 +336,37 @@ img {
     letter-spacing: 0.03em;
     color: var(--color-tittle);
     margin-bottom: 50px;
-  }
+}
+
+.clients-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+.clients-item{
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
+}
+.clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 92px;
+    width: 170px;
+
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clients-link:hover {
+    fill: var(--brend-color);
+    border: 1px solid var(--brend-color);
+}
+
+
                            /* Подвал */
                            /* Секция 1 */
 .footer{
