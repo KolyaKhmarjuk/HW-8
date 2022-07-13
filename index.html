@@ -60,19 +60,49 @@
                 </svg>
             </button>
             <form class="form-modal">
+                <b class="title-form">Оставьте свои данные, мы вам перезвоним</b>
                 <div class="input-box">
-                    <label class="label-form">Имя</label>
-                    <input class="input-form">
+                    <input class="input-form" name="name" placeholder=" ">
+                    <label class="label-form" for="name">Имя</label>
+
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./images/sprite.svg#icon-name-form-hero"></use>
+                    </svg>
                 </div>
 
-                <div>
-                    <label  class="label-form">Телефон</label>
-                    <input  class="input-form">
+                <div class="input-box">
+                    <input class="input-form" name="tel" placeholder=" ">
+                    <label class="label-form" for="tel">Телефон</label>
+                    
+                    <svg class="icon-form"  width="18px" height="18px">
+                        <use href="./images/sprite.svg#icon-tel-form-hero"></use>
+                    </svg>
                 </div>
 
-                <div>
-                    <label  class="label-form">Почта</label>
-                    <input  class="input-form">
+                <div class="input-box">
+                    <input class="input-form" name="email" placeholder=" ">
+                    <label class="label-form" name="email">Почта</label>
+                    
+                    <svg class="icon-form"  width="18px" height="18px">
+                        <use href="./images/sprite.svg#icon-mail-form-hero"></use>
+                    </svg>
+                </div>
+                <div class="texteria-box">
+                    <label class="texteria-label">Коментарии</label>
+                    <textarea class="texteria-form" name="comment" id="texsteria" rows="10" placeholder="Введите текст"></textarea>
+                </div>
+
+                <div class="treaty">
+                    <label  class="label-checkbox">
+                        <input class="input-check" type="checkbox" name="checkbox">
+                        
+                        <svg class="icon-check" width="16" height="15">
+                            <use href="./images/sprite.svg#icon-vector-form-hero"></use>
+                        </svg>
+                        Соглашаюсь с рассылкой и принимаю
+                        <a class="treaty-link" href="./index.html">Условия договора</a>
+                    </label>
+                    <button type="submit" class="treaty-btn">Отправить</button>
                 </div>
 
             </form>

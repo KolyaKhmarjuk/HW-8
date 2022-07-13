@@ -200,7 +200,7 @@ img {
 }
 
 .hero-btn:hover{
-    background-color: green;
+    background-color: #188CE8;
 }
 
 
@@ -240,6 +240,7 @@ img {
     
     width: 528px;
     height: 581px;
+    padding: 40px;
 
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px 
@@ -265,8 +266,157 @@ img {
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-
 }
+
+/* ФОРМА МОДАЛКИ */
+
+.title-form {
+    display: block;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--color-tittle);
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-form{
+    display: block;
+    outline-style: none;
+
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.input-form:focus{
+    border: 1px solid #2196F3;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-form{
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.9;
+    
+    letter-spacing: 0.01em;
+}
+
+.icon-form{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.input-form:focus + .label-form, .input-form:not(:placeholder-shown) + .label-form{
+    color: var(--brend-color);
+    transform: translateY(-35px)
+    translateX(-35px);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-form:focus ~ .icon-form{
+    fill: #188CE8;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.texteria-box{
+    margin-bottom: 20px;
+}
+
+.texteria-form{
+    height: 120px;
+    width: 100%;
+    resize: none;
+    outline-style: none;
+
+    padding: 12px 16px 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.texteria-label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.treaty{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-check{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.label-checkbox{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+.icon-check {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-origin: border-box;
+}
+
+.input-check:checked + .icon-check{
+    background-color: var(--brend-color);
+    border-color: var(--brend-color)
+}
+
+
+
+.treaty-btn{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+
+    color: #FFFFFF;
+    background-color: var(--brend-color);
+
+    border: transparent;
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.treaty-link{
+    color: var(--brend-color);
+}
+
+.treaty-btn:hover{
+    background-color: #188CE8;
+}
+
+
 
                              /* ОСОБЕНОСТИ */
 
@@ -618,9 +768,8 @@ img {
 }
 
 .btn-submit:hover{
-   background: green;
+    background-color: #188CE8;
 }
-
 
 
 
