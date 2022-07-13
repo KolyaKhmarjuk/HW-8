@@ -268,6 +268,10 @@ img {
     border-radius: 50%;
 }
 
+.btn-modal:hover{
+    fill: var(--brend-color);
+}
+
 /* ФОРМА МОДАЛКИ */
 
 .title-form {
@@ -358,6 +362,18 @@ img {
 .texteria-label{
     display: block;
     margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.9;
+    letter-spacing: 0.01em;
+}
+
+
+
+.texteria-form:focus, .texteria-form:not(:placeholder-shown){
+    border-color: var(--brend-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .treaty{
@@ -386,6 +402,8 @@ img {
     border: 2px solid black;
     border-radius: 4px;
     background-origin: border-box;
+    cursor: pointer;
+
 }
 
 .input-check:checked + .icon-check{
