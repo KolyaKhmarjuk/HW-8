@@ -1,0 +1,40 @@
+.widget__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+
+    color: $color-title;
+}
+
+.widget__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget__img {
+    position: relative;
+}
+
+.widget__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+}

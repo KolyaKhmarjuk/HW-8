@@ -1,0 +1,187 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+
+    background-color: $color-bg-modal;
+    box-shadow: $box-shadow-modal;
+    border-radius: 4px;
+}
+
+.modal__btnClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.modal__title {
+    display: block;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $color-title;
+}
+
+.modal__box {
+    position: relative;
+}
+
+.modal__input {
+    display: block;
+    outline-style: none;
+
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 25px;
+
+    &:focus{
+        border: 1px solid $color-accent;
+        transition: $cubic500ms;
+    }
+}
+
+.modal__label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.9;
+
+    letter-spacing: 0.01em;
+}
+
+.modal__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.modal__input:focus+.modal__label,
+.modal__input:not(:placeholder-shown)+.modal__label {
+    color: var(--brend-color);
+    transform: translateY(-35px) translateX(-35px);
+    transition: $cubic500ms;
+}
+
+.modal__input:focus~.modal__icon {
+    fill: $color-hover-btn;
+    transition: $cubic500ms
+}
+
+.texteria {
+    margin-bottom: 20px;
+}
+
+.texteria__label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.9;
+    letter-spacing: 0.01em;
+}
+
+.texteria__form {
+    height: 120px;
+    width: 100%;
+    resize: none;
+    outline-style: none;
+
+    padding: 12px 16px 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus, :not(:placeholder-shown){
+        border-color: $color-accent;
+        transition: $cubic250ms;
+    }
+}
+
+.treaty {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.treaty__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+.treaty__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.treaty__icon {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-origin: border-box;
+    cursor: pointer;
+}
+
+.treaty__input:checked+.treaty__icon {
+    background-color: $color-accent;
+    border-color: $color-accent;
+}
+
+.treaty__submit {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+
+    color: #FFFFFF;
+    background-color: $color-accent;
+
+    border: transparent;
+    border-radius: 4px;
+    transition: $cubic250ms;
+    box-shadow: $box-shadow-submit;
+
+    &:hover{
+        background-color: $color-hover-btn;
+    }
+}
+
+.treaty__link {
+    color: $color-accent;
+}

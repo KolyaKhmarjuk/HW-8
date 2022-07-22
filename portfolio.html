@@ -9,35 +9,35 @@
     rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 <header class="page-header">
     <div class="container header-box">
-        <a class="header-logo" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="nav-list list">
-            <li class="nav-item">
-                <a class="nav-link" href="./index.html">Студия</a>
+        <a class="logo" href="./index.html"><span class="logo__text">Web</span>Studio</a>
+        <ul class="nav list">
+            <li class="nav__item">
+                <a class="nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+                <a class="nav__link active" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">Контакты</a>
+            <li class="nav__item">
+                <a class="nav__link" href="">Контакты</a>
             </li>
         </ul>
-        <ul class="contact-list list">
-            <li class="contact-item">
-                <a class="contact-mail" href="mailto:info@devstudio.com">
-                    <svg class="contact-icon" width="16" height="12">
+        <ul class="contact list">
+            <li class="contact__item">
+                <a class="contact__link" href="mailto:info@devstudio.com">
+                    <svg class="contact__icon" width="16" height="12">
                         <use href="./images/sprite.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com
                 </a>
             </li>
-            <li class="contact-item">
-                <a class="contact-tel" href="tel:+380961111111">
-                    <svg class="contact-icon" width="16" height="12">
+            <li class="contact__item">
+                <a class="contact__link" href="tel:+380961111111">
+                    <svg class="contact__icon" width="16" height="12">
                         <use href="./images/sprite.svg#icon-Vector"></use>
                     </svg>
                     +380 96 111 11 11
@@ -48,32 +48,33 @@
 </header>
       
 <main>
-    <section class="features container section">
-        <div class="project-box">
+    <section class=" section">
+    <div class="container">
+        <div class="navigate">
             <h1 hidden>Наши проекты</h1>
-            <ul class="project-list list">
-                <li class="project-item">
-                    <button type="button" class="portfolio-btn">Все</button>
+            <ul class="navigate__list list">
+                <li class="navigate__item">
+                    <button type="button" class="navigate__btn">Все</button>
                 </li>
-                <li class="project-item">
-                    <button type="button" class="portfolio-btn">Веб-сайты</button>
+                <li class="navigate__item">
+                    <button type="button" class="navigate__btn">Веб-сайты</button>
                 </li>
-                <li class="project-item">
-                    <button type="button" class="portfolio-btn">Приложения</button>
+                <li class="navigate__item">
+                    <button type="button" class="navigate__btn">Приложения</button>
                 </li>
-                <li class="project-item">
-                    <button type="button" class="portfolio-btn">Дизайн</button>
+                <li class="navigate__item">
+                    <button type="button" class="navigate__btn">Дизайн</button>
                 </li>
-                <li class="project-item">
-                    <button type="button" class="portfolio-btn">Маркетинг</button>
+                <li class="navigate__item">
+                    <button type="button" class="navigate__btn">Маркетинг</button>
                 </li>
             </ul>
         </div>
-        <ul class="features-list list">
-            <li class="features-item">
-                <div  class="features-img">
+        <ul class="features list">
+            <li class="features__item">
+                <div  class="features__img">
                     <img src="./images/imgportfolio/img1portf.jpg" alt="ноутбук" width="370" height="294">
-                        <div class="features-hover-text">
+                        <div class="features__popup">
                             <p>
                                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                  получить
@@ -81,15 +82,15 @@
                             </p>
                         </div>
                 </div>
-                <div class="features-content">
-                    <h2 class="features-subtitle">Технокряк</h2>
-                    <p class="features-text">Веб-сайт</p>
+                <div class="features__content">
+                    <h2 class="features__subtitle">Технокряк</h2>
+                    <p class="features__text">Веб-сайт</p>
                 </div>         
              </li>
-            <li class="features-item">
-                <div class="features-img">
+            <li class="features__item">
+                <div class="features__img">
                     <img src="./images/imgportfolio/img2portf.jpg" alt="ноутбук" width="370" height="294">
-                    <div class="features-hover-text">
+                    <div class="features__popup">
                         <p>
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                             посетителю
@@ -98,15 +99,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-content">
-                   <h2 class="features-subtitle">Постер New Orlean vs Golden Star</h2>
-                   <p class="features-text">Дизайн</p>
+                <div class="features__content">
+                   <h2 class="features__subtitle">Постер New Orlean vs Golden Star</h2>
+                   <p class="features__text">Дизайн</p>
                 </div>
             </li>
-            <li class="features-item">
-                <div class="features-img">
+            <li class="features__item">
+                <div class="features__img">
                     <img src="./images/imgportfolio/img3portf.jpg" alt="ноутбук" width="370" height="294">
-                    <div class="features-hover-text">
+                    <div class="features__popup">
                         <p>
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                             посетителю
@@ -115,15 +116,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-content">
-                   <h2 class="features-subtitle">Ресторан Seafood</h2>
-                   <p class="features-text">Приложение</p>    
+                <div class="features__content">
+                   <h2 class="features__subtitle">Ресторан Seafood</h2>
+                   <p class="features__text">Приложение</p>    
                 </div>
             </li>
-            <li class="features-item">
-                <div class="features-img">
+            <li class="features__item">
+                <div class="features__img">
                     <img src="./images/imgportfolio/img4portf.jpg" alt="ноутбук" width="370" height="294">
-                    <div class="features-hover-text">
+                    <div class="features__popup">
                         <p>
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                             посетителю
@@ -132,15 +133,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-content">
-                   <h2 class="features-subtitle">Проект Prime</h2>
-                   <p class="features-text">Маркетинг</p>
+                <div class="features__content">
+                   <h2 class="features__subtitle">Проект Prime</h2>
+                   <p class="features__text">Маркетинг</p>
                 </div>
             </li>
-            <li class="features-item">
-                <div class="features-img">
+            <li class="features__item">
+                <div class="features__img">
                     <img src="./images/imgportfolio/img5portf.jpg" alt="ноутбук" width="370" height="294">
-                    <div class="features-hover-text">
+                    <div class="features__popup">
                         <p>
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                             посетителю
@@ -149,15 +150,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-content">
-                   <h2 class="features-subtitle">Проект Boxes</h2>
-                   <p class="features-text">Приложение</p>
+                <div class="features__content">
+                   <h2 class="features__subtitle">Проект Boxes</h2>
+                   <p class="features__text">Приложение</p>
                 </div>
             </li>
-            <li class="features-item">
-                <div class="features-img">
+            <li class="features__item">
+                <div class="features__img">
                     <img src="./images/imgportfolio/img6portf.jpg" alt="ноутбук" width="370" height="294">
-                    <div class="features-hover-text">
+                    <div class="features__popup">
                         <p>
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                             посетителю
@@ -166,15 +167,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-content">
-                   <h2 class="features-subtitle">Inspiration has no Borders</h2>
-                   <p class="features-text">Веб-сайт</p>
+                <div class="features__content">
+                   <h2 class="features__subtitle">Inspiration has no Borders</h2>
+                   <p class="features__text">Веб-сайт</p>
                 </div>
             </li>
-            <li class="features-item">
-                <div class="features-img">
+            <li class="features__item">
+                <div class="features__img">
                     <img src="./images/imgportfolio/img7portf.jpg" alt="ноутбук" width="370" height="294">
-                    <div class="features-hover-text">
+                    <div class="features__popup">
                         <p>
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                             посетителю
@@ -183,15 +184,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-content">
-                   <h2 class="features-subtitle">Издание Limited Edition</h2>
-                   <p class="features-text">Дизайн</p>
+                <div class="features__content">
+                   <h2 class="features__subtitle">Издание Limited Edition</h2>
+                   <p class="features__text">Дизайн</p>
                 </div>
             </li>
-            <li class="features-item">
-                <div class="features-img">
+            <li class="features__item">
+                <div class="features__img">
                     <img src="./images/imgportfolio/img8portf.jpg" alt="ноутбук" width="370" height="294">
-                    <div class="features-hover-text">
+                    <div class="features__popup">
                         <p>
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                             посетителю
@@ -200,15 +201,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-content">
-                   <h2 class="features-subtitle">Проект LAB</h2>
-                   <p class="features-text">Маркетинг</p>
+                <div class="features__content">
+                   <h2 class="features__subtitle">Проект LAB</h2>
+                   <p class="features__text">Маркетинг</p>
                 </div>
             </li>
-            <li class="features-item">
-                <div class="features-img">
+            <li class="features__item">
+                <div class="features__img">
                     <img src="./images/imgportfolio/img9portf.jpg" alt="ноутбук" width="370" height="294">
-                    <div class="features-hover-text">
+                    <div class="features__popup">
                         <p>
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                             посетителю
@@ -217,70 +218,78 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-content">
-                   <h2 class="features-subtitle">Growing Business</h2>
-                   <p class="features-text">Приложение</p>
+                <div class="features__content">
+                   <h2 class="features__subtitle">Growing Business</h2>
+                   <p class="features__text">Приложение</p>
                 </div>
             </li>
         </ul>
+    </div>
     </section>
 </main>
 <footer class="footer list">
-    <div  class="footer-box container">
-         <div class="footerboxlogo">
-             <a class="footer-logo" href="./index.html"><span>Web</span>Studio</a>
-             <address class="address-box">
-                 <ul class="address-list list">
-                     <li class="address-item">
-                         <p class="address-map">г. Киев, пр-т Леси Украинки, 26</p>
-                     </li>
-                     <li class="address-item">
-                         <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                     </li>
-                     <li class="address-item">
-                         <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
-                     </li>
+    <div class="footer__box container">
+        <div>
+            <a class="logo logo--footer" href="./index.html"><span class="logo__text">Web</span>Studio</a>
+            <address class="address">
+                <ul class="address__list list">
+                    <li class="address__item">
+                        <a class="address__map" href="./index.html">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="address__item">
+                        <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="address__item">
+                        <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
                 </ul>
-             </address>
-         </div>
-         <div class="footerboxlink">
-            <h2 class="title-footer">ПРИСОЕДИНЯЙТЕСЬ</h2>
-            <ul class="footer-icon-list list">
-                <a href="https://www.instagram.com" class="footer-icon-item">
-                    <svg class="nav-icon-link" width="20px" height="20px">
-                        <use href="./images/sprite.svg#icon-instagram-2"></use>
-                    </svg>
-                </a>
-                <a href="https://twitter.com" class="footer-icon-item">
-                    <svg class="footer-icon-link" width="20px" height="20px">
-                        <use href="./images/sprite.svg#icon-twitter-1"></use>
-                    </svg>
-                </a>
-                <a href="https://www.facebook.com" class="footer-icon-item">
-                    <svg class="footer-icon-link" width="20px" height="20px">
-                        <use href="./images/sprite.svg#icon-facebook-1"></use>
-                    </svg>
-                </a>
-                <a href="https://linkedin.com/" class="footer-icon-item">
-                    <svg class="footer-icon-link" width="20px" height="20px">
-                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                    </svg>
-                </a>
-            </ul>
-         </div>
-            <form class="footer-input-box">
-                <h2 class="title-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-                <input class="input-footer" type="email" name="email" placeholder="E-mail">
-                <div class="btn-footer">
-                    <button class="btn-submit" type="submit">Подписаться
-                        <svg class="icon-submit" width="24" height="24">
-                            <use href="./images/sprite.svg#icon-footer-submit"></use>
+            </address>
+        </div>
+        <div class="networks">
+            <h2 class="networks__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <ul class="networks__list list">
+                <li class="networks__item">
+                    <a href="https://www.instagram.com">
+                        <svg width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-instagram-2"></use>
                         </svg>
-                    </button>
-                </div>
-            </form>
-
+                    </a>
+                </li>
+                <li class="networks__item">
+                    <a href="https://twitter.com">
+                        <svg width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="networks__item">
+                    <a href="https://www.facebook.com">
+                        <svg width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="networks__item">
+                    <a href="https://linkedin.com/">
+                        <svg width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <form class="subscribe">
+            <h2 class="subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+            <input class="subscribe__input" type="email" name="email" placeholder="E-mail">
+            <div class="subscribe__btn">
+                <button class="subscribe__submit" type="submit">Подписаться
+                    <svg class="subscribe__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-footer-submit"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
     </div>
-    </footer>
+</footer>
     </body>
 </html>

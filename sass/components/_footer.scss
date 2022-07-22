@@ -1,0 +1,169 @@
+.footer {
+    display: block;
+    background-color: var(--bgd-brand);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__box {
+    display: flex;
+}
+
+.logo--footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0px;
+
+    color: #FFFFFF;
+}
+
+.address__list {
+    display: inline-block;
+}
+
+.address__item:not(:last-child) {
+    padding-bottom: 9px;
+}
+
+.address__link {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.address__map {
+    color: var(--bgd-color-text);
+    text-decoration: none;
+}
+
+.address__link {
+    color: var(--color-footer-link);
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__link:hover,
+.address__link:focus {
+    color: var(--brend-color)
+}
+
+/* СЕКЦИЯ 2 */
+
+.networks {
+    display: block;
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.networks__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.networks__list {
+    display: flex;
+}
+
+.networks__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.networks__item {
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: #afb1b8;
+    cursor: pointer;
+    
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: $cubic250ms;
+
+    &:hover{
+        background-color: var(--brend-color);
+        fill: #FFFFFF;
+    }
+}
+
+// .networks__item:hover {
+//     background-color: var(--brend-color);
+//     fill: #FFFFFF;
+// }
+
+.subscribe {
+    margin-left: 93px;
+    margin-top: 12px;
+}
+
+.subscribe__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px 15px 16px;
+    outline-style: none;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+
+    &:focus, :not(:placeholder-shown){
+        border-color: $color-accent;
+    }
+}
+
+// .subscribe__input:focus,
+// .subscribe__input:not(:placeholder-shown) {
+//     border-color: var(--brend-color);
+// }
+
+.subscribe__btn {
+    display: inline-block;
+}
+
+.subscribe__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    padding: 0px;
+
+    border-radius: 4px;
+    border-color: transparent;
+
+    background: $color-accent;
+    color: #FFFFFF;
+    
+    box-shadow: $box-shadow-submit;
+    
+    &:hover{
+        background-color: $color-hover-btn;
+    }
+    
+}
+
+.subscribe__icon {
+    margin: 13px 0px 13px 10px;
+}
