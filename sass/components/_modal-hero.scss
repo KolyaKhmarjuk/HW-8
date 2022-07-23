@@ -65,7 +65,24 @@
         border: 1px solid $color-accent;
         transition: $cubic500ms;
     }
+
+    &:focus~.modal__icon{
+        fill: $color-hover-btn;
+        transition: $cubic500ms;
+    }
 }
+
+.modal__input:focus+.modal__label,
+.modal__input:not(:placeholder-shown)+.modal__label {
+    color: var(--brend-color);
+    transform: translateY(-35px) translateX(-35px);
+    transition: $cubic500ms;
+}
+
+// .modal__input:focus~.modal__icon {
+//     fill: $color-hover-btn;
+//     transition: $cubic500ms;
+// }
 
 .modal__label {
     position: absolute;
@@ -87,17 +104,7 @@
     transform: translateY(-50%);
 }
 
-.modal__input:focus+.modal__label,
-.modal__input:not(:placeholder-shown)+.modal__label {
-    color: var(--brend-color);
-    transform: translateY(-35px) translateX(-35px);
-    transition: $cubic500ms;
-}
 
-.modal__input:focus~.modal__icon {
-    fill: $color-hover-btn;
-    transition: $cubic500ms
-}
 
 .texteria {
     margin-bottom: 20px;

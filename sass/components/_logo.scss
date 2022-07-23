@@ -10,11 +10,11 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    color: var(--color-tittle);
+    color: $color-title;
 }
 
 .logo__text {
-    color: var(--brend-color);
+    color: $color-accent;
 }
 
 .logo--footer {
@@ -22,5 +22,5 @@
     margin-bottom: 20px;
     margin-right: 0px;
 
-    color: #FFFFFF;
+    color: $color-bg-text;
 }

@@ -55,18 +55,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--color-tittle);
+  color: #212121;
 }
 
 .logo__text {
-  color: var(--brend-color);
+  color: #2196F3;
 }
 
 .logo--footer {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .page-header {
@@ -143,10 +143,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .contact__item {
   margin-right: 50px;
 }
-
 .nav__item:last-child,
 .contact__item:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .hero {
@@ -262,6 +261,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
   border: 1px solid #2196F3;
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal__input:focus ~ .modal__icon {
+  fill: #188CE8;
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__input:focus + .modal__label,
+.modal__input:not(:placeholder-shown) + .modal__label {
+  color: var(--brend-color);
+  transform: translateY(-35px) translateX(-35px);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal__label {
   position: absolute;
@@ -279,18 +289,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-}
-
-.modal__input:focus + .modal__label,
-.modal__input:not(:placeholder-shown) + .modal__label {
-  color: var(--brend-color);
-  transform: translateY(-35px) translateX(-35px);
-  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__input:focus ~ .modal__icon {
-  fill: #188CE8;
-  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .texteria {
@@ -558,7 +556,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
   fill: #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .clients__link:hover {
   fill: #2196F3;
   border: 1px solid #2196F3;
@@ -566,7 +563,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .footer {
   display: block;
-  background-color: var(--bgd-brand);
+  background-color: #2196F3;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -579,7 +576,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .address__list {
@@ -599,21 +596,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .address__map {
-  color: var(--bgd-color-text);
+  color: #ffffff;
   text-decoration: none;
 }
 
 .address__link {
-  color: var(--color-footer-link);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.address__link:hover,
-.address__link:focus {
-  color: var(--brend-color);
+.address__link:hover, .address__link :focus {
+  color: #2196F3;
 }
 
 /* СЕКЦИЯ 2 */
@@ -628,16 +621,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 .networks__list {
   display: flex;
-}
-
-.networks__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .networks__item {
@@ -652,8 +641,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .networks__item:hover {
-  background-color: var(--brend-color);
-  fill: #FFFFFF;
+  background-color: #2196F3;
+  fill: #ffffff;
+}
+.networks__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .subscribe {
@@ -666,7 +658,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -675,7 +667,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   height: 50px;
   padding: 15px 16px 15px 16px;
   outline-style: none;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -700,7 +692,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   border-radius: 4px;
   border-color: transparent;
   background: #2196F3;
-  color: #FFFFFF;
+  color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .subscribe__submit:hover {
@@ -759,9 +751,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-top: 30px;
   margin-left: 30px;
   cursor: pointer;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .features__item:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -785,12 +775,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  background-color: var(--brend-color);
-  color: #fff;
+  background-color: #2196F3;
+  color: #ffffff;
   transform: translateY(100%);
-  transition-property: box-shadow, background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .features__content {
@@ -807,7 +795,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--color-tittle);
+  color: #212121;
   margin-bottom: 4px;
 }
 

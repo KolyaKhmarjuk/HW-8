@@ -1,6 +1,6 @@
 .footer {
     display: block;
-    background-color: var(--bgd-brand);
+    background-color: $color-accent;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -14,7 +14,7 @@
     margin-bottom: 20px;
     margin-right: 0px;
 
-    color: #FFFFFF;
+    color: $color-bg-text;
 }
 
 .address__list {
@@ -34,23 +34,24 @@
 }
 
 .address__map {
-    color: var(--bgd-color-text);
+    color: $color-bg-text;
     text-decoration: none;
 }
 
 .address__link {
-    color: var(--color-footer-link);
+    color: $color-footer-link;
     text-decoration: none;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: $cubic250ms;
+    &:hover,:focus{
+        color: $color-accent;
+    }
 }
 
-.address__link:hover,
-.address__link:focus {
-    color: var(--brend-color)
-}
+// .address__link:hover,
+// .address__link:focus {
+//     color: var(--brend-color)
+// }
 
 /* СЕКЦИЯ 2 */
 
@@ -65,7 +66,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: $color-bg-text;
     margin-bottom: 20px;
 }
 
@@ -73,9 +74,9 @@
     display: flex;
 }
 
-.networks__item:not(:last-child) {
-    margin-right: 10px;
-}
+// .networks__item:not(:last-child) {
+//     margin-right: 10px;
+// }
 
 .networks__item {
     display: block;
@@ -91,8 +92,12 @@
     transition: $cubic250ms;
 
     &:hover{
-        background-color: var(--brend-color);
-        fill: #FFFFFF;
+        background-color: $color-accent;
+        fill: $color-bg-text;
+    }
+
+    &:not(:last-child){
+        margin-right: 10px;
     }
 }
 
@@ -111,7 +116,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: $color-bg-text;
     margin-bottom: 20px;
 }
 
@@ -120,7 +125,8 @@
     height: 50px;
     padding: 15px 16px 15px 16px;
     outline-style: none;
-    color: #FFFFFF;
+    
+    color: $color-bg-text;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
@@ -154,8 +160,7 @@
     border-color: transparent;
 
     background: $color-accent;
-    color: #FFFFFF;
-    
+    color: $color-bg-text;
     box-shadow: $box-shadow-submit;
     
     &:hover{

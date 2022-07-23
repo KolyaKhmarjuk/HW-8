@@ -13,9 +13,7 @@
 
     cursor: pointer;
 
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: $cubic250ms;
 
     &:hover{
         box-shadow: $box-shadow;
@@ -56,14 +54,12 @@
     line-height: 1.6;
     letter-spacing: 0.03em;
 
-    background-color: var(--brend-color);
-    color: #fff;
+    background-color: $color-accent;
+    color: $color-bg-text;
 
     transform: translateY(100%);
 
-    transition-property: box-shadow, background-color, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: $cubic250ms;
 }
 
 .features__content {
@@ -80,7 +76,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--color-tittle);
+    color: $color-title;
     margin-bottom: 4px;
 
 }
