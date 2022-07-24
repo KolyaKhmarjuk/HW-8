@@ -588,7 +588,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .address__item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .address__link {
