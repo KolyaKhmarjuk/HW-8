@@ -80,8 +80,8 @@
     fill: #afb1b8;
 
     &:hover{
-        background-color: var(--brend-color);
-        fill: #FFFFFF;
+        background-color: $color-accent;
+        fill: $color-bg-text;
     }
 
     &:not(:last-child){
