@@ -42,7 +42,8 @@
     color: $color-footer-link;
     text-decoration: none;
 
-    transform: $cubic250ms;
+    transition: $cubic250ms;
+
     &:hover,:focus{
         color: $color-accent;
     }
@@ -149,24 +150,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 
-    width: 200px;
-    height: 50px;
-    margin-left: auto;
-    padding: 0px;
-
-    border-radius: 4px;
-    border-color: transparent;
-
-    background: $color-accent;
-    color: $color-bg-text;
+    @extend %button;
     box-shadow: $box-shadow-submit;
-    
-    &:hover{
-        background-color: $color-hover-btn;
-    }
-    
 }
 
 .subscribe__icon {
