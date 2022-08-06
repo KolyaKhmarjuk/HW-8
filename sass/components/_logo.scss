@@ -17,3 +17,11 @@
     color: $color-accent;
 }
 
+.logo--footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 0px;
+
+    color: $color-bg-text;
+}

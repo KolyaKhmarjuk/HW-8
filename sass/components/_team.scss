@@ -15,10 +15,10 @@
 
 }
 
-.team__list {
-    display: flex;
-    justify-content: space-between;
-}
+// .team__list {
+//     display: flex;
+//     justify-content: space-between;
+// }
 
 .team__item {
     display: flex;
@@ -28,7 +28,13 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: $box-shadow-modal;
     
-    background-color: $color-bg-text
+    background-color: $color-bg-text;
+
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    color: #757575;
 }
 
 .team__name {

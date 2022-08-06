@@ -1,28 +1,30 @@
 .footer {
-    display: block;
+    // display: block;
+
     background-color: $color-bg-hero;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.footer__box {
-    display: flex;
-}
+// .footer__box {
+//     display: flex;
+// }
 
-.logo--footer {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 0px;
 
-    color: $color-bg-text;
-}
 
-.address__list {
-    display: inline-block;
+.address{
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 .address__item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+
+.address__map {
+    color: $color-bg-text;
+    text-decoration: none;
 }
 
 .address__link {
@@ -31,14 +33,6 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-}
-
-.address__map {
-    color: $color-bg-text;
-    text-decoration: none;
-}
-
-.address__link {
     color: $color-footer-link;
     text-decoration: none;
 
@@ -49,38 +43,29 @@
     }
 }
 
-// .address__link:hover,
-// .address__link:focus {
-//     color: var(--brend-color)
-// }
-
 /* СЕКЦИЯ 2 */
 
-.networks {
-    display: block;
-    margin-left: 70px;
-    margin-top: 12px;
+.networks__list {
+    display: flex;
+    justify-content: center;
 }
 
 .networks__title {
+    display: flex;
+    justify-content: center;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: $color-bg-text;
     margin-bottom: 20px;
+
 }
 
-.networks__list {
-    display: flex;
-}
 
-// .networks__item:not(:last-child) {
-//     margin-right: 10px;
-// }
+
 
 .networks__item {
-    display: block;
     padding: 12px;
     border-radius: 50%;
     width: 44px;
@@ -102,17 +87,13 @@
     }
 }
 
-// .networks__item:hover {
-//     background-color: var(--brend-color);
-//     fill: #FFFFFF;
-// }
 
 .subscribe {
-    margin-left: 93px;
-    margin-top: 12px;
+    padding-top: 60px;
 }
 
 .subscribe__title {
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -122,7 +103,7 @@
 }
 
 .subscribe__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px 16px 15px 16px;
     outline-style: none;
@@ -137,13 +118,10 @@
     }
 }
 
-// .subscribe__input:focus,
-// .subscribe__input:not(:placeholder-shown) {
-//     border-color: var(--brend-color);
-// }
-
 .subscribe__btn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .subscribe__submit {

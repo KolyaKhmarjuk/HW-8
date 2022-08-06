@@ -20,29 +20,44 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media sreen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 }
 
 .list {
     list-style-type: none;
 }
 
-.logo--footer {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 0px;
-
-    color: $color-bg-text;
+%list{
+    list-style-type: none;
 }
+
+
 
 .nav__item .active::after {
     content: " ";

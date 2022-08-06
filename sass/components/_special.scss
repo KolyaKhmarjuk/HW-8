@@ -3,44 +3,38 @@
 }
 
 .special__list {
-    display: flex;
-    justify-content: space-between;
+    @extend %list
 }
-
-.special__item {
-    display: block;
-    
-    &:not(:last-child){
-        margin-right: 30px;
-    }
-}
-
-// .special__item:not(:last-child) {
-//     margin-right: 30px;
-// }
 
 .special__title {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
-
+    
     color: $color-title;
-
 }
 
 .special__text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    color: #757575;
 }
 
 .special__icon {
-    display: block;
+    display: flex;
+    justify-content: center;
     padding: 25px 100px;
     border-radius: 4px;
     margin-bottom: 30px;
 
     background-color: #F5F4FA;
+}
+
+.special__item:not(:last-child){
+    margin-bottom: 30px;
 }

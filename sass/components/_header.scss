@@ -1,26 +1,20 @@
-.page-header {
+.header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ECECEC;
-}
-
-.header-box {
-    display: flex;
-    
 }
 
 .nav {
     display: flex;
     margin-right: auto;
     align-self: center;
+    @extend %list
 }
 
 .nav__item {
     padding-top: 32px;
     padding-bottom: 32px;
-
 }
-
 
 
 .nav__link {
@@ -50,6 +44,7 @@
 .contact {
     display: flex;
     align-self: center;
+    @extend %list
 }
 
 .contact__link {
