@@ -2,8 +2,6 @@
     padding-bottom: 0px;
 }
 
-
-
 .special__list {
     @extend %list
 }
@@ -41,19 +39,20 @@
     margin-bottom: 30px;
 }
 
-@media screen and (min-width:768px) {
-    .special__list {
+@media screen and (min-width: 768px) {
+    .special__list{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 0px;
     }
-
-    .special__item {
-        flex-basis: calc(100% / 2 - 30px)
-    }
-
     .special__item{
+        flex-basis: calc(100% / 2 - 15px);
+    }
+    .special__item:nth-child(2n + 1) {
         margin-right: 30px;
     }
+    .special__item:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
 }
+
