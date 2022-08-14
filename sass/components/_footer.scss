@@ -1,16 +1,8 @@
 .footer {
-    // display: block;
-
     background-color: $color-bg-hero;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
-// .footer__box {
-//     display: flex;
-// }
-
-
 
 .address{
     text-align: center;
@@ -61,9 +53,6 @@
     margin-bottom: 20px;
 
 }
-
-
-
 
 .networks__item {
     padding: 12px;
@@ -135,4 +124,58 @@
 
 .subscribe__icon {
     margin: 13px 0px 13px 10px;
+}
+
+// Tablet
+
+@media screen and (min-width: 768px) {
+
+    .footer__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__address{
+        margin-left: 76px;
+    }
+    .address{
+        padding-bottom: 0;
+    }
+    .networks{
+        margin-right: 89px;
+    }
+    .subscribe{
+        text-align: center;
+    }
+}
+
+// Dekstop
+
+@media screen and (min-width: 1200px) {
+    .footer__box{
+        display: flex;
+    }
+    .footer__address{
+        margin-left: 0;
+    }
+    .networks{
+        margin-left: 70px;
+        margin-right: 0;
+    }
+    .subscribe{
+        
+        padding-top: 0;
+    }
+    .subscribe__btn{
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 12px;
+    }
+    .subscribe__input{
+        margin-left: 88px;
+        width: 358px;
+    }
+    .subscribe__title{
+        text-align: left;
+        margin-left: 88px;
+    }
 }

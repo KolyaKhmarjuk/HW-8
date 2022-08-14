@@ -79,11 +79,6 @@
     transition: $cubic500ms;
 }
 
-// .modal__input:focus~.modal__icon {
-//     fill: $color-hover-btn;
-//     transition: $cubic500ms;
-// }
-
 .modal__label {
     position: absolute;
     top: 50%;
@@ -105,8 +100,6 @@
     pointer-events: none;
     transform: translateY(-50%);
 }
-
-
 
 .texteria {
     margin-bottom: 20px;

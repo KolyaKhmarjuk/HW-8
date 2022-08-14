@@ -5,12 +5,6 @@
     height: 60px;
 
     border-bottom: 1px solid #ECECEC;
-
-    @media screen and (min-width:768px) {
-        height: 80px;
-    }
-
-
 }
 
 .nav {
@@ -20,13 +14,6 @@
     @extend %list;
 }
 
- @media screen and(max-width:767px) {
-    .nav{
-         display: none;
-    }
-}
-
-
 .nav__item {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -35,7 +22,6 @@
         margin-right: 50px;
     }
 }
-
 
 .nav__link {
     position: relative;
@@ -64,11 +50,9 @@
 
 .contact__item:not(:last-child){
     margin-bottom: 10px;
-}
 
-@media screen and(max-width:767px) {
-    .contact{
-        display: none;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
     }
 }
 
@@ -92,12 +76,6 @@
     border: none;
     outline: none;
     background-color: transparent;
-}
-
-@media (min-width:768px) {
-    .menu-toggle {
-        display: none;
-    }
 }
 
 .menu-container {
@@ -139,7 +117,6 @@
 .mobile{
     margin-top: 48px;
 }
-
 
 .mobile__link{
     display: block;
@@ -210,3 +187,35 @@
     color: $color-accent;
 }
 
+// Tablet
+
+@media screen and (min-width:768px) {
+    .header__box{
+        height: 80px;
+    }
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media screen and(max-width:767px) {
+    .nav {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+}
+
+// Desktop
+
+@media screen and (min-width: 1200px) {
+    .contact {
+        display: flex;
+        align-self: center;
+    }
+   .contact__item:not(:last-child){
+    margin-right: 30px;
+   }
+}

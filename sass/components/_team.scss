@@ -2,8 +2,6 @@
     background-color: #F5F4FA;
 }
 
-
-
 .team__title {
     font-weight: 700;
     font-size: 36px;
@@ -33,6 +31,7 @@
 
     color: #757575;
 }
+
 
 .team__name {
     display: flex;
@@ -88,6 +87,10 @@
     }
 }
 
+
+
+// Tablet
+
 @media screen and (min-width: 768px) {
     .team__list {
         display: flex;
@@ -97,6 +100,7 @@
 
     .team__item {
         flex-basis: calc(100% / 2 - 15px);
+        margin-bottom: 30px;
     }
 
     .team__item:nth-child(2n + 1) {
@@ -106,5 +110,16 @@
     .team__item:nth-last-child(-n + 2) {
         margin-bottom: 0;
     }
+}
 
+// Dekstop
+
+@media screen and (min-width: 1200px) {
+    .team__list{
+        flex-wrap: nowrap;
+    }
+    .team__item:not(:last-child){
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
 }
