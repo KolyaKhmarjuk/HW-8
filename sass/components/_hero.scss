@@ -8,30 +8,31 @@
     height: 400px;
     margin-right: auto;
     margin-left: auto;
+    background-size: cover;
 
     background-color: $color-bg-hero;
     background-image:
         linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(./images/heroTablet@1x.jpg);
+        url('../images/heroMobile@1x.jpg');
 
-@media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+                @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
         background-image: 
-        linear-gradient(to right, 
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)), 
-        url(/images/heroMobile@2x.jpg);
-    }
+            linear-gradient(to right, 
+            rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)), 
+            url('/images/heroMobile@2x.jpg');
+        }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         background-image: 
             linear-gradient(to right, 
             rgba(47, 48, 58, 0.4), 
             rgba(47, 48, 58, 0.4)), 
-            url(/images/heroTablet@1x.jpg);
+            url('/images/heroTablet@1x.jpg');
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -40,7 +41,7 @@
             linear-gradient(to right, 
             rgba(47, 48, 58, 0.4), 
             rgba(47, 48, 58, 0.4)), 
-            url(/images/heroTablet@2x.jpg);
+            url('/images/heroTablet@2x.jpg');
         }
     }
 
@@ -49,7 +50,7 @@
             linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(/images/heroDekstop@1x.jpg);
+            url('/images/heroDekstop@1x.jpg');
         
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -58,7 +59,7 @@
             linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(/images/heroDekstop@2x.jpg);
+            url('/images/heroDekstop@2x.jpg');
         }
     }
     @media screen and (min-width: 1200px) {
