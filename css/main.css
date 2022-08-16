@@ -405,6 +405,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
+}
 
 .modal__btnClose {
   position: absolute;
@@ -795,6 +800,19 @@ h1, h2, h3, h4, h5, h6, p, ul {
   border: 1px solid #2196F3;
 }
 
+@media screen and (max-width: 480px) {
+  .clients__item {
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .clients__item:not(:last-child) {
+    padding-bottom: 30px;
+  }
+  .clients__link {
+    width: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients__list {
     justify-content: space-between;
@@ -920,6 +938,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   border-color: #2196F3;
 }
 
+@media screen and (max-width: 480px) {
+  .subscribe__input {
+    width: 100%;
+  }
+}
 .subscribe__btn {
   display: flex;
   justify-content: center;

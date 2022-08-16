@@ -107,6 +107,12 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .subscribe__input{
+        width: 100%;
+    }
+}
+
 .subscribe__btn {
     display: flex;
     justify-content: center;
